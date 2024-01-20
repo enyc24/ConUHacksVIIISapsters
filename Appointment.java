@@ -1,9 +1,8 @@
 
 public class Appointment{
-    private Calendar appointmentRequestDate;
-    private Calendar appointmentDate;
-    private Car car;
-    
+    private Calendar apptRequestDate;
+    private Calendar apptDate;
+  
     public Appointment(String apptRequestDate, String apptDate, String car){
         this.apptRequestDate = apptRequestDate;
         this.apptDate = apptDate;
