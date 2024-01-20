@@ -2,6 +2,7 @@
 public class Appointment{
     private String apptRequestDate;
     private String apptDate;
+    private String car;
   
     public Appointment(String apptRequestDate, String apptDate, String car){
         this.apptRequestDate = apptRequestDate;
