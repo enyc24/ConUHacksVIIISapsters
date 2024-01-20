@@ -1,7 +1,7 @@
 
 public class Appointment{
-    private Calendar apptRequestDate;
-    private Calendar apptDate;
+    private String apptRequestDate;
+    private String apptDate;
   
     public Appointment(String apptRequestDate, String apptDate, String car){
         this.apptRequestDate = apptRequestDate;
