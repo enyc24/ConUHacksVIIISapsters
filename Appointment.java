@@ -3,8 +3,21 @@ public class Appointment{
     private Calendar appointmentRequestDate;
     private Calendar appointmentDate;
     private Car car;
+    
+    public Appointment(String apptRequestDate, String apptDate, String car){
+        this.apptRequestDate = apptRequestDate;
+        this.apptDate = apptDate;
+        this.car = car;
+    }
 
-    public Appointment(String appointmentRequestDate, String apointmentDate, String car){
-        this.appointmentRequestDate = Calendar(appointmentRequestDate);
+    public int Conversion(String apptRequestDate){
+        int trait1 = apptRequestDate.indexOf('-');
+        int trait2 = apptRequestDate.lastIndexOf('-');
+
+        int year = Integer.parseInt(apptRequestDate.substring(0, trait1));
+        int month = Integer.parseInt(apptRequestDate.substring(trait1 + 1, trait2));
+        int day = Integer.parseInt(apptRequestDate.substring(trait2 + 1));
+
+        return year + month + day;
     }
 }
